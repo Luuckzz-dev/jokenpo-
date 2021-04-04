@@ -1,3 +1,8 @@
+/*
+    Lucas Gonzales
+    Análise e Desenvolvimento de Sistemas 
+    QI Faculdade & Escola Técnica 2021
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
@@ -6,8 +11,8 @@
 #define PAPEL 2
 #define TESOURA 3
 
-int pontosJogador;
-int pontosComputador;
+int pontosJogador=0;
+int pontosComputador=0;
 
 void jogo();
 void imprimeItem(int item);
@@ -23,6 +28,8 @@ int main(){
 
     int i;
     for(i=0; i<3; i++){
+// inicia loop até um jogador atingir 3 wins
+    while(pontosJogador < 3 && pontosComputador < 3){
         jogo();
         printf("*******************************************************************************\n");
     }
@@ -36,7 +43,7 @@ int main(){
     return 0;
 }
 
-
+}
 void jogo(){
 
     int itemJogador;
