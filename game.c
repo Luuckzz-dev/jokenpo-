@@ -1,6 +1,6 @@
 /*
     Lucas Gonzales
-    Análise e Desenvolvimento de Sistemas 
+    Análise e Desenvolvimento de Sistemas
     QI Faculdade & Escola Técnica 2021
 */
 #include <stdlib.h>
@@ -39,7 +39,7 @@ int main(){
     printf("   Computador: %d \n", pontosComputador);
     printf("\n Obrigado por jogar!");
 
-    system("pause>nul");
+    system("pause>null");
     return 0;
 }
 
